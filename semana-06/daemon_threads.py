@@ -15,10 +15,11 @@ def con_insonmio():
 
 
 # Forma 1 de hacer un thread daemon
-dormilon = threading.Thread(name="Dormilon", target=dormilon, daemon=True)
+dormilon = threading.Thread(name="Dormilon", target=dormilon, daemon= True)
 # Forma 2 de hacer un thread daemon
 con_insomnio = threading.Thread(name="Con insonmio", target=con_insonmio)
 con_insomnio.daemon = True
+
 
 # Se inicializan los threads
 dormilon.start()
